@@ -37,7 +37,7 @@ function StudentDash() {
             {/* part of the student info */}
             <div id="studentDashContainer">
                 <div id="studentImg">
-                    <img alt="img" src={studentDetails?.photo || defaultImage} />
+                    <img alt="img" src={studentDetails?.photo || defaultImage} onError={handleImageError}/>
                 </div>
 
                 <div id="stuDashData">
