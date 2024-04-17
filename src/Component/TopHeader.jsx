@@ -17,7 +17,6 @@ function Topheader() {
             .then(response => {
                 try {
                     if (response.data.stuloggedIn === true) {
-                        setStudentDetails(response.data.studentData);
                         setStuLogName(response.data.studentData?.student_name);
                         setLoggedIn(true);
                     }
