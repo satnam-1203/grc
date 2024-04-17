@@ -14,7 +14,7 @@ function Transition() {
     const [transactionId, setTransactionId] = useState(null);
     const navigate = useNavigate();
     const location = useLocation();
-    const upiId = location.state ? location.state.upiId : null;
+    // const upiId = location.state ? location.state.upiId : null;
     const bank = location.state ? location.state.selectMethod : null;
     const fee = location.state ? location.state.fee : null;
 
@@ -79,7 +79,7 @@ function Transition() {
                     };
 
                     Axios.post('http://localhost:3001/insertPayment', paymentDetails)
-                        .then(response => {
+                        .then(response => { 
                             console.log('Payment inserted successfully:', response.data);
                         })
                         .catch(error => {
@@ -94,7 +94,7 @@ function Transition() {
         }, 2000); // Assuming 2 seconds for payment
 
         return () => clearTimeout(paymentTimeout); // Cleanup the timeout on component unmount
-    }, [studentDetails, bank, transactionId]); // Include studentDetails, bank, and transitionId in the dependency array
+    }, [studentDetails, bank, fee, transactionId]); // Include studentDetails, bank, and transitionId in the dependency array
 
     return (
         <>
