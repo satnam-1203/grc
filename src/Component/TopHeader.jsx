@@ -7,7 +7,6 @@ import { API_URL } from '../utils/config';
 function Topheader() {
     const [logName, setLogName] = useState("");
     const [stulogName, setStuLogName] = useState("");
-    const [studentDetails, setStudentDetails] = useState({});
     const [loggedIn, setLoggedIn] = useState(false);
 
     Axios.defaults.withCredentials = true;
