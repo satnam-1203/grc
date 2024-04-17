@@ -4,6 +4,7 @@ import Axios from "axios";
 import courseMapping from '../utils/Course';
 import { useNavigate } from 'react-router-dom';
 import defaultImage from '../Images/profile-icon.jpg';
+import { API_URL } from '../utils/config';
 
 function StudentDash() {
     const [studentDetails, setStudentDetails] = useState([]);
@@ -12,7 +13,7 @@ function StudentDash() {
     const navigate = useNavigate();
 
     useEffect(() => {
-        Axios.get('http://localhost:3001/getLoggedInStudentData', { withCredentials: true })
+        Axios.get(`${API_URL}/getLoggedInStudentData`, { withCredentials: true })
             .then(response => {
                 if (response.data.stuloggedIn === true) {
                     setStudentDetails(response.data.studentData);
