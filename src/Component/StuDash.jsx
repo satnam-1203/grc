@@ -12,6 +12,8 @@ function StudentDash() {
     const [teacherName, setTeacherName] = useState();
     const navigate = useNavigate();
 
+    Axios.defaults.withCredentials = true;
+
     useEffect(() => {
         Axios.get(`${API_URL}/getLoggedInStudentData`, { withCredentials: true })
             .then(response => {
