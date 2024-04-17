@@ -1,0 +1,1272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  user-select: none;
+}
+
+html,body {
+  background-color: #f6f8fa;
+  height: 100%;
+}
+
+:root {
+  --orange: #FF7043;
+  --alert: #ff4c24;
+  --light-cream: #ede8e8;
+  --background-color:#E8EAF6;
+  --light-purple:#c1c4db;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+/************TOP NAV STARTS Here****************/
+#top-header {
+  width: 100%;
+  height: 25px;
+  background: #2e2e2e;
+  color: white;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  padding-right: 50px;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 999;
+}
+
+#top-header .topHeaderElements {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+#top-header .topHeaderElements .welcomeTxt{
+ margin-right: 20px;
+}
+
+/************NAVBAR STARTS Here****************/
+#navbar {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 25px;
+  background-color: black;
+  display: flex;
+  color: white;
+  padding: 25px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+#navMenu {
+  display: flex;
+  margin-right: 20px;
+}
+
+#navMenu ul {
+  display: flex;
+  align-items: center;
+}
+
+#navMenu ul li {
+  display: flex;
+  margin-left: 20px;
+  list-style-type: none;
+  cursor: pointer;
+  color: white;
+}
+
+/************Home page banner starts Here****************/
+.IntroBanner {
+  margin-top: 85px;
+  position: relative;
+}
+
+.IntroBanner img {
+  width: 100%;
+  height: 100vh;
+  display: block;
+}
+
+#blurry {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(18, 18, 18, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#blurry .banner-text {
+  color: white;
+  font-size: 50px;
+  white-space: nowrap;
+}
+
+.get-started-button {
+  margin-bottom: -90px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.get-started-button:hover {
+  background: #f57418;
+}
+
+@keyframes typing {
+  from { width: 0; }
+
+  to { width: 100%; }
+}
+
+/********************Home Page student login section****************************/
+.HomeLoginSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: var(--background-color);
+  align-items: flex-end;
+  padding: 190px 0;
+}
+
+.HomeLoginSection .loginInfo p {
+  font-weight: bold;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.HomeLoginSection .loginInfo ul li {
+  color: black;
+  margin-left: 45px;
+  font-size: 27px;
+  margin-top: 8px;
+}
+
+.HomeLoginSection #loginMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.HomeLoginSection #loginMenu #forgetPass {
+  color: black;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+/*********************Home page Reg section starts here**************************/
+.HomeRegSection {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+  padding: 180px;
+}
+
+.HomeRegSection .RegInfo p {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.HomeRegSection .RegInfo h2 {
+  margin-top: 10px;
+  font-size: 25px;
+}
+
+.HomeRegSection .RegInfo ul {
+  margin-top: 10px;
+}
+
+.HomeRegSection .RegInfo ul li {
+  color: black;
+  margin-left: 55px;
+  font-size: 27px;
+  margin-top: 8px;
+}
+
+#RegNotification {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 20px;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*********************Home page course section starts here**************************/
+#HomeCourseContainer {
+  padding: 140px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--background-color);
+}
+
+#HomeCourseContainer #courseTitle {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+#HomeCourseList {
+  display: flex;
+  padding: 10px;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#boxeCont {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#boxeCont .boxes {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: #ddd;
+  color: #fdfbfb;
+  transition: transform 0.3s;
+}
+
+#boxeCont .boxes:hover {
+  transform: scale(1.1);
+}
+
+#boxeCont .boxes i {
+  font-size: 45px;
+}
+
+#boxeCont #boxesPara {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+/*********************Home page others section starts here**************************/
+#HomeOtherContainer {
+  padding: 40px;
+  margin-top: 110px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#HomeOtherContainer #othersTitle {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+#HomeOthersList {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#boxeCont {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#boxeCont .boxes {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background-color: var(--light-purple);
+  color: #fdfbfb;
+  transition: transform 0.3s;
+}
+
+#boxeCont .boxes:hover {
+  transform: scale(1.1);
+}
+
+#boxeCont .boxes i {
+  font-size: 55px;
+}
+
+#boxeCont #boxesPara {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+/*********************Home Contact us section starts here**************************/
+#homeContactSection {
+  margin-top: 100px;
+  width: 100%;
+  background-color: #DCD6F7;
+  padding: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#homeContactSection #contactPara {
+  font-size: 20px;
+  width: 450px;
+}
+
+/************************footer starts here***********************************/
+
+#footer {
+  height: 250px;
+  width: 100%;
+  bottom: 0;
+  padding: 50px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+#mainFooter {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+#mainFooter #footerLinks p:not(:first-child) {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#mainFooter #footerCourse p:not(:first-child) {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#footerCopyright {
+  margin-top: 18px;
+  color: white;
+}
+
+/**********ERROR 404 PAGE*********/
+#errPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  height: 100vh;
+}
+
+#errPage #errPageTxt {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+/**************Contactus Page***********/
+.cusPageForm {
+  width: 70%;
+  background: #fff;
+  padding: 50px;
+  margin-bottom: 30px;
+}
+
+.cusPageForm .contactUsInputForm {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+}
+
+#contactUsinput, #contactUsinput2{
+  display: flex;
+  flex-direction: column;
+}
+
+#contactUsinput3{
+  width: 100%;
+  display: flex ;
+  justify-content: center;
+}
+
+.cusPageForm .contactUsInputForm #txtarea {
+  height: 200px;
+  width: 350px;
+  padding-top: 5px;
+  padding-left: 10px;
+  margin-top: 30px;
+  font-size: 19px;
+  border: 1px solid black;
+  resize: none;
+}
+/*********************About section starts here******************/
+#aboutSection {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 65px;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+#aboutSection #pageTitle{
+  font-size: 45px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+#aboutSection p {
+  font-size: 19px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  word-spacing: 1px;
+}
+
+/*********************Course section starts here******************/
+#coursePage {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 45px;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 20px;
+  ;
+}
+
+.courseTitle {
+  margin-bottom: 50px;
+  margin-top: 70px;
+  text-decoration: underline;
+}
+
+.courseTitle p {
+  font-size: 30px;
+  justify-content: flex-start;
+  font-weight: bold;
+}
+
+.courseList {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.boxeCont {
+  height: 190px;
+  width: 180px;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: center;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  transition: transform 0.3s;
+}
+
+.boxeCont:hover {
+  transform: scale(1.1);
+}
+
+.courseList .boxeCont .boxIcon i {
+  font-size: 40px;
+}
+
+.courseList .boxeCont .boxIcon {
+  height: 90px;
+  width: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.courseList .boxeCont p {
+  color: black;
+  margin-top: 8px;
+}
+
+/*********************Registration section starts here******************/
+#registrationPage {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 65px 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+
+}
+
+/*********************student basic*************/
+#stuBasicMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+select {
+  height: 40px;
+  width: 270px;
+  border: none;
+  padding-left: 10px;
+  margin-top: 25px;
+  font-size: 20px;
+  background: transparent;
+  border-bottom: 1.5px solid black;
+}
+
+select option:checked {
+  background-color: #a4a4a4;
+  color: #fff;
+}
+
+/********** student qualifications************/
+#stuQualifMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  height: 55px;
+  width: 270px;
+  font-size: 18px;
+  justify-content: center;
+  left: 5px;
+  cursor: pointer;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 10;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  transition: background-color 0.3s ease;
+}
+
+.container:hover .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked+.checkmark {
+  background-color: #2196F3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.container input:checked+.checkmark:after {
+  display: block;
+}
+
+/********** student course************/
+#stuCourseMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Style for the checkbox label */
+#stuCourseMenu label {
+  display: block;
+  margin-top: 15px;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+/********** student course************/
+#stuDocsMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+#stuDocsMenu .fileInputLabel {
+  height: 40px;
+  width: 270px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+  display: flex;
+  font-size: 16px;
+  background: transparent;
+  border: 1.5px solid black;
+}
+
+#regButtonsForForm {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/************* enroll section starts here ***************/
+#enrollSection {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  padding: 75px 40px;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 10px;
+  align-items: center;
+}
+
+#enrollSection #notice {
+  font-size: 22px;
+  text-align: justify;
+  user-select: text;
+  margin-top: 60px;
+}
+
+/***************student dashboard section starts here*************/
+
+/*******first part of dashboard********/
+#studentDashContainer{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  background-color: #2196F3;
+  width: 100%;
+}
+
+#studentDashContainer img{
+  height: 120px;
+  width: 120px;
+}
+
+#studentDashContainer #stuDashData{
+  display: flex;
+  padding: 30px;
+  width: 80%;
+  justify-content: space-between;
+}
+
+#colgInfo{
+  width: 50%;
+}
+
+/**************first part of dashboard*******/
+#stuDashManagementPart{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+#stuDashManagementPart #stuNotification{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#stuDashManagementPart #stuCourseSyallbus{
+  width: 31%;
+  height: 180px;
+  background-color: #eee;
+}
+#stuDashManagementPart #notification{
+  width: 65.5%;
+  height: 180px;
+  font-size: 20px;
+  align-content: center;
+  background-color: #eee;
+}
+#studentDashContainer p{
+  text-align: left;
+  color: white;
+}
+
+/***** result and notification part*****/
+#stuResultSection{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+#stuResultSection .ManageSectionBox{
+  height: 180px;
+  margin-top: 5px;
+  width:31%;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+}
+
+/******** part of student profile*********/
+#studentProfData{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#studentProfData .profData{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#studentProfData #profDataTitle{
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+#studentProfData .profData p{
+  width: 250px;
+  margin-top: 0px;
+  text-align: left;
+  font-size: 18px;
+  /* color: white; */
+  padding: 10px;
+  /* background-color: #4fcaf7; */
+}
+/***************Login stafff*******************/
+#form-container{
+  display:flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  height:550px;
+  width:600px;
+  background: #fff;
+  border-radius:10px;
+  padding : 20px 20px;
+}
+
+.input-box{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+#form-container p{
+  text-align: center;
+  font-size: 30px; 
+}
+
+/*************** side nav bar*****************/
+#sideBarContainer{
+  width: 280px;
+  height: 100vh;
+  background-color:  var(--orange);
+  color: white;
+  padding: 20px;
+}
+
+#sideBarContainer #tab{
+  margin-top: 30px;
+}
+
+#sideBarContainer #tab p{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+#sideBarContainer #tabs ul, li{
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#sideBarContainer #tabs ul li:hover{
+  text-decoration: underline;
+}
+
+/*********** fee notification**********/
+#feeNotifcontainer{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  justify-content: center;
+}
+
+#feeNotifcontainer > p, h3, #feeNotifcontainer > ul > li, .footer > p {
+  font-size: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.footer :not(p){
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/***************payment******************/
+#paymentSection{
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+#paymentSection #studentPaySection, #staffPaySection{
+  min-height: 200px;
+  width: 350px;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+#paymentSection #studentPaySection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+#paymentSection #studentPaySection #studentdetail{
+  width: 85%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#paymentSection #studentPaySection #studentdetail > p{
+  font-size: 19px;
+  margin-top: 10px;
+}
+
+#paymentSection #staffPaySection > p {
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+#paymentSection #staffPaySection > h2{
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+#paymentSection #studentPaySection #cardDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  width: 85%;
+}
+
+#paymentSection #studentPaySection #cardDetails > input{
+  width: 130px;
+}
+
+/************ transition section*********/
+#transitionSection{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 75px 40px;
+  min-height: 430px;
+  text-align: justify;
+  background-color: #ffffff;
+  border-radius: 10px;
+  align-items: center;
+}
+
+#transitionSection .loader{
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+}
+
+#transitionSection #transData{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#transitionSection #transData > ul> li, #transData > p, .payment-failed-message{
+  font-size: 22px;
+  margin-top: 5px;
+}
+
+.loader {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loader p {
+  margin-bottom: 10px;
+}
+
+.loader-spinner {
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/********* model of transaction********/
+#transcactionData{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 750px;
+  text-align: left;
+  font-size: 20px;
+}
+
+#transcactionData > p {
+  margin-top: 10px;
+  width:350px;
+}
+
+/********* res section**************/
+#result{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+#resSection {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+#stuInfoRes {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+#resSection > #subName{
+  /* border: 1px solid black; */
+  margin-top: 20px;
+  text-align: center;
+  list-style-type: none;
+
+  font-size: 22px;
+}
+
+#resSection > #subName > ul{
+  list-style-type: none;
+  text-align: left;
+}
+
+#resSection > #subName > ul > li{
+  border: 1px solid black;
+  padding: 16px 30px;
+  width: 100%;
+}
+/********** management page*************/
+.managementPage {
+  width: 60%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 65px 40px;
+  background-color: #ffffff;
+}
+
+/**********part of main********/
+#managementBox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.manageBoxCont {
+  height: 180px;
+  width: 180px;
+  background-color: #f5f7fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0px;
+  border-radius: 8px;
+  text-align: center;
+  justify-content: space-evenly;
+  margin-left: 4px;
+  margin-bottom: 40px;
+  transition: transform 0.3s;
+}
+
+.manageBoxCont:hover {
+  transform: scale(1.1);
+}
+
+.manageBoxCont p {
+  font-size: 20px;
+}
+
+#txtarea{
+  height: 250px;
+  resize: none;
+  margin-top: 15px;
+  padding: 15px;
+  border:1px solid black;
+  font-size: 18px;
+}
+
+/****************add staff part*****************/
+#staffContent {
+  display: flex;
+  flex-direction: column;
+}
+#addStaffInput{
+  display: flex;
+  /* width: 100%; */
+  padding: 5px 15px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/*************** global buttons***************/
+input {
+  height: 40px;
+  width: 270px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding-left: 10px;
+  margin-top: 25px;
+  font-size: 20px;
+  /* background: transparent; */
+  /* border-bottom: 1.5px solid black; */
+}
+
+button, #linkBtn {
+  height: 50px;
+  width: 270px;
+  border: none;
+  font-size: 20px;
+  text-decoration: none;
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+#PageContainer {
+  margin-top: 85px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 40px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#pageTitle {
+  font-size: 55px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+
+#studentRegTitle { /*** part of student reg***/
+  margin-top: 80px;
+  font-size: 30px;
+}
+
+#tabData{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+/*******************global table************/
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+}
+
+#tableContent{
+  margin-top: 50px;
+}
+
+th { min-width: 160px;
+}
+
+td, th {  padding: 10px 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+/* rich text editor */
+.custom-ckeditor .ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+  height: 300px;
+}
+/********************model test*****************/
+.modal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99;
+  background-color: #cccccc86;
+}
+
+.modal-content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  border-radius: 7px;
+  background-color: #ffffff;
+  padding: 60px;
+}
+
+.modal-content h2 {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.modal-content .close {
+  font-size: 35px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -35px;
+  margin-top: -50px;
+}
+
+.modal-content #studentData{
+  display: flex;
+  flex-wrap: wrap;
+  width: 900px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.modal-content #coursepara {
+  font-size: 19px;
+  margin-top: 8px;
+  margin-left: 25px;
+}
+
+.modal-content #studentData p{
+  font-size: 20px;
+  width: 300px;
+  text-align: left;
+  margin-top: 10px;
+}
+
+.modal-content #p {
+  font-size: 19px;
+  margin-top: 8px;
+}
+
+.modal-content #modalBtn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/***************media query***********************/
+@media screen and (max-width: 768px) {
+  .HomeLoginSection .loginInfo p {
+    font-size: 30px;
+  }
+
+  .HomeLoginSection .loginInfo ul li {
+    font-size: 20px;
+  }
+
+  .HomeRegSection .RegInfo p {
+    font-size: 40px;
+  }
+
+  .HomeRegSection .RegInfo ul li {
+    font-size: 20px;
+  }
+
+  #HomeCourseContainer #courseTitle {
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  #HomeOtherContainer #othersTitle {
+    font-weight: bold;
+    font-size: 40px;
+  }
+}
