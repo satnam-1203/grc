@@ -27,6 +27,7 @@ function StudentSyllabus() {
 
     return (
         <div style={{ border: "1px solid black" }}>
+            {error(<p> {error} </p>)}
             {content ? (
                 <div dangerouslySetInnerHTML={{ __html: content }} />
             ) : (
