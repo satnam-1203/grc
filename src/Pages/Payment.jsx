@@ -48,7 +48,7 @@ function Payment() {
 
     const renderBankOptions = () => {
         return (
-            <select name="" id="" defaultValue="" onChange={(e) => { setChooseBank(e.target.value) }}>
+            <select name="" id="" defaultValue="" value={chooseBank} onChange={(e) => { setChooseBank(e.target.value) }}>
                 <option value="" disabled hidden>Select Bank</option>
                 <option value="state bank of India">State Bank Of India</option>
                 <option value="Central Bank Of India">Central Bank Of India</option>
