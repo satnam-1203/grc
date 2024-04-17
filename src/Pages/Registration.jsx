@@ -165,23 +165,23 @@ function Registration() {
             return;
         }
 
-        const convertFileToBase64 = (file) => {
-            return new Promise((resolve, reject) => {
-                const reader = new FileReader();
-                reader.readAsDataURL(file);
-                reader.onload = () => {
-                    resolve(reader.result.split(',')[1]); // Get base64 string without data:image/jpeg;base64,
-                };
-                reader.onerror = (error) => reject(error);
-            });
-        };
+        // const convertFileToBase64 = (file) => {
+        //     return new Promise((resolve, reject) => {
+        //         const reader = new FileReader();
+        //         reader.readAsDataURL(file);
+        //         reader.onload = () => {
+        //             resolve(reader.result.split(',')[1]); // Get base64 string without data:image/jpeg;base64,
+        //         };
+        //         reader.onerror = (error) => reject(error);
+        //     });
+        // };
 
         const { conditionMet, message } = percentageCalc();
 
         const { percentage, gradeMarks } = percentageCalc();
 
         //this condition checks percentage is grade based or non grade based
-        const percent = isGradeBased ? parseFloat(gradeMarks) : percentage;
+        // const percent = isGradeBased ? parseFloat(gradeMarks) : percentage;
 
         const grades = {
             95: 'A++', 90: 'A+', 85: 'A', 80: 'B+', 75: 'B', 60: 'C', 50: 'D', 30: 'Fair', 0: 'Fail',
@@ -190,7 +190,7 @@ function Registration() {
         // Use the 'grade' variable directly, not 'selectedGrade'
         const selectedGrade = isGradeBased ? grades[grade] : '';
 
-        const status = "null";
+        // const status = "null";
 
         //insert data into sql
 
