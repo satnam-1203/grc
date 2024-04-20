@@ -176,7 +176,7 @@ html,body {
   flex-wrap: wrap-reverse;
   justify-content: space-around;
   align-items: center;
-  padding: 180px;
+  padding: 180px 0;
 }
 
 .HomeRegSection .RegInfo p {
@@ -473,6 +473,7 @@ html,body {
 .courseTitle {
   margin-bottom: 50px;
   margin-top: 70px;
+  text-align: center;
   text-decoration: underline;
 }
 
@@ -486,6 +487,7 @@ html,body {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+  gap: 68px;
   justify-content: flex-start;
 }
 
@@ -496,10 +498,11 @@ html,body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   border-radius: 8px;
   justify-content: center;
-  margin-left: 40px;
-  margin-bottom: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
   transition: transform 0.3s;
 }
 
@@ -1099,8 +1102,6 @@ input {
   padding-left: 10px;
   margin-top: 25px;
   font-size: 20px;
-  /* background: transparent; */
-  /* border-bottom: 1.5px solid black; */
 }
 
 button, #linkBtn {
@@ -1243,7 +1244,29 @@ tr:nth-child(even) {
 }
 
 /***************media query***********************/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {  
+  #blurry .banner-text {
+    font-size: 35px;
+  }
+
+  #coursePage, #aboutSection, .cusPageForm{
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .cusPageForm .contactUsInputForm #txtarea{
+    width:270px;
+  }
+
+  .courseList {
+    justify-content: center;
+  }
+
+  #pageTitle {
+    font-size: 40px;
+  }
+
   .HomeLoginSection .loginInfo p {
     font-size: 30px;
   }
