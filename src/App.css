@@ -1,3 +1,5 @@
+/****App.css****/
+
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +8,8 @@
   user-select: none;
 }
 
-html,body {
+html,
+body {
   background-color: #f6f8fa;
   height: 100%;
 }
@@ -15,8 +18,8 @@ html,body {
   --orange: #FF7043;
   --alert: #ff4c24;
   --light-cream: #ede8e8;
-  --background-color:#E8EAF6;
-  --light-purple:#c1c4db;
+  --background-color: #E8EAF6;
+  --light-purple: #c1c4db;
 }
 
 .link {
@@ -46,12 +49,12 @@ html,body {
   justify-content: flex-end;
 }
 
-#top-header .topHeaderElements .welcomeTxt{
- margin-right: 20px;
+#top-header .topHeaderElements .welcomeTxt {
+  margin-right: 20px;
 }
 
 /************NAVBAR STARTS Here****************/
-#navbar {
+/* #navbar {
   height: 60px;
   width: 100%;
   position: fixed;
@@ -81,7 +84,7 @@ html,body {
   list-style-type: none;
   cursor: pointer;
   color: white;
-}
+} */
 
 /************Home page banner starts Here****************/
 .IntroBanner {
@@ -129,9 +132,13 @@ html,body {
 }
 
 @keyframes typing {
-  from { width: 0; }
+  from {
+    width: 0;
+  }
 
-  to { width: 100%; }
+  to {
+    width: 100%;
+  }
 }
 
 /********************Home Page student login section****************************/
@@ -404,14 +411,15 @@ html,body {
   margin-top: 30px;
 }
 
-#contactUsinput, #contactUsinput2{
+#contactUsinput,
+#contactUsinput2 {
   display: flex;
   flex-direction: column;
 }
 
-#contactUsinput3{
+#contactUsinput3 {
   width: 100%;
-  display: flex ;
+  display: flex;
   justify-content: center;
 }
 
@@ -425,6 +433,7 @@ html,body {
   border: 1px solid black;
   resize: none;
 }
+
 /*********************About section starts here******************/
 #aboutSection {
   width: 70%;
@@ -436,7 +445,7 @@ html,body {
   border-radius: 10px;
 }
 
-#aboutSection #pageTitle{
+#aboutSection #pageTitle {
   font-size: 45px;
   font-weight: bold;
   margin-bottom: 40px;
@@ -467,7 +476,6 @@ html,body {
   align-items: center;
   width: 100%;
   padding: 20px 20px;
-  ;
 }
 
 .courseTitle {
@@ -536,7 +544,6 @@ html,body {
   padding: 65px 40px;
   background-color: #ffffff;
   border-radius: 10px;
-
 }
 
 /*********************student basic*************/
@@ -686,7 +693,7 @@ select option:checked {
 /***************student dashboard section starts here*************/
 
 /*******first part of dashboard********/
-#studentDashContainer{
+#studentDashContainer {
   display: flex;
   flex-wrap: wrap;
   padding: 20px;
@@ -694,63 +701,65 @@ select option:checked {
   width: 100%;
 }
 
-#studentDashContainer img{
+#studentDashContainer img {
   height: 120px;
   width: 120px;
 }
 
-#studentDashContainer #stuDashData{
+#studentDashContainer #stuDashData {
   display: flex;
   padding: 30px;
   width: 80%;
   justify-content: space-between;
 }
 
-#colgInfo{
+#colgInfo {
   width: 50%;
 }
 
 /**************first part of dashboard*******/
-#stuDashManagementPart{
+#stuDashManagementPart {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-#stuDashManagementPart #stuNotification{
+#stuDashManagementPart #stuNotification {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-#stuDashManagementPart #stuCourseSyallbus{
+#stuDashManagementPart #stuCourseSyallbus {
   width: 31%;
   height: 180px;
   background-color: #eee;
 }
-#stuDashManagementPart #notification{
+
+#stuDashManagementPart #notification {
   width: 65.5%;
   height: 180px;
   font-size: 20px;
   align-content: center;
   background-color: #eee;
 }
-#studentDashContainer p{
+
+#studentDashContainer p {
   text-align: left;
   color: white;
 }
 
 /***** result and notification part*****/
-#stuResultSection{
+#stuResultSection {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-#stuResultSection .ManageSectionBox{
+#stuResultSection .ManageSectionBox {
   height: 180px;
   margin-top: 5px;
-  width:31%;
+  width: 31%;
   background-color: #eee;
   display: flex;
   justify-content: center;
@@ -759,25 +768,25 @@ select option:checked {
 }
 
 /******** part of student profile*********/
-#studentProfData{
+#studentProfData {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
-#studentProfData .profData{
+#studentProfData .profData {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-#studentProfData #profDataTitle{
+#studentProfData #profDataTitle {
   margin-top: 30px;
   font-weight: bold;
   font-size: 22px;
 }
 
-#studentProfData .profData p{
+#studentProfData .profData p {
   width: 250px;
   margin-top: 0px;
   text-align: left;
@@ -786,66 +795,71 @@ select option:checked {
   padding: 10px;
   /* background-color: #4fcaf7; */
 }
+
 /***************Login stafff*******************/
-#form-container{
-  display:flex;
+#form-container {
+  display: flex;
   flex-direction: column;
-  justify-content:center;
+  justify-content: center;
   align-items: center;
-  height:550px;
-  width:600px;
+  height: 550px;
+  width: 600px;
   background: #fff;
-  border-radius:10px;
-  padding : 20px 20px;
+  border-radius: 10px;
+  padding: 20px 20px;
 }
 
-.input-box{
+.input-box {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
 }
 
-#form-container p{
+#form-container p {
   text-align: center;
-  font-size: 30px; 
+  font-size: 30px;
 }
 
 /*************** side nav bar*****************/
-#sideBarContainer{
+#sideBarContainer {
   width: 280px;
   height: 100vh;
-  background-color:  var(--orange);
+  background-color: var(--orange);
   color: white;
   padding: 20px;
 }
 
-#sideBarContainer #tab{
+#sideBarContainer #tab {
   margin-top: 30px;
 }
 
-#sideBarContainer #tab p{
+#sideBarContainer #tab p {
   font-size: 22px;
   font-weight: bold;
 }
 
-#sideBarContainer #tabs ul, li{
+#sideBarContainer #tabs ul,
+li {
   margin-left: 20px;
   cursor: pointer;
 }
 
-#sideBarContainer #tabs ul li:hover{
+#sideBarContainer #tabs ul li:hover {
   text-decoration: underline;
 }
 
 /*********** fee notification**********/
-#feeNotifcontainer{
+#feeNotifcontainer {
   display: flex;
   flex-direction: column;
   text-align: justify;
   justify-content: center;
 }
 
-#feeNotifcontainer > p, h3, #feeNotifcontainer > ul > li, .footer > p {
+#feeNotifcontainer>p,
+h3,
+#feeNotifcontainer>ul>li,
+.footer>p {
   font-size: 20px;
   text-align: center;
   display: flex;
@@ -853,7 +867,7 @@ select option:checked {
   margin-top: 20px;
 }
 
-.footer :not(p){
+.footer :not(p) {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -861,7 +875,7 @@ select option:checked {
 }
 
 /***************payment******************/
-#paymentSection{
+#paymentSection {
   display: flex;
   flex-wrap: wrap;
   width: 90%;
@@ -869,7 +883,8 @@ select option:checked {
   margin-top: 50px;
 }
 
-#paymentSection #studentPaySection, #staffPaySection{
+#paymentSection #studentPaySection,
+#staffPaySection {
   min-height: 200px;
   width: 350px;
   padding: 15px;
@@ -877,30 +892,30 @@ select option:checked {
   border: 1px solid black;
 }
 
-#paymentSection #studentPaySection{
+#paymentSection #studentPaySection {
   display: flex;
   flex-direction: column;
   align-items: center;
   /* justify-content: center; */
 }
 
-#paymentSection #studentPaySection #studentdetail{
+#paymentSection #studentPaySection #studentdetail {
   width: 85%;
   margin-top: 20px;
   margin-bottom: 10px;
 }
 
-#paymentSection #studentPaySection #studentdetail > p{
+#paymentSection #studentPaySection #studentdetail>p {
   font-size: 19px;
   margin-top: 10px;
 }
 
-#paymentSection #staffPaySection > p {
+#paymentSection #staffPaySection>p {
   margin-top: 10px;
   font-size: 19px;
 }
 
-#paymentSection #staffPaySection > h2{
+#paymentSection #staffPaySection>h2 {
   margin-top: 20px;
   font-size: 24px;
 }
@@ -912,12 +927,12 @@ select option:checked {
   width: 85%;
 }
 
-#paymentSection #studentPaySection #cardDetails > input{
+#paymentSection #studentPaySection #cardDetails>input {
   width: 130px;
 }
 
 /************ transition section*********/
-#transitionSection{
+#transitionSection {
   width: 70%;
   display: flex;
   flex-direction: column;
@@ -930,20 +945,22 @@ select option:checked {
   align-items: center;
 }
 
-#transitionSection .loader{
+#transitionSection .loader {
   display: flex;
   align-items: center;
   font-size: 25px;
 }
 
-#transitionSection #transData{
+#transitionSection #transData {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-top: 30px;
 }
 
-#transitionSection #transData > ul> li, #transData > p, .payment-failed-message{
+#transitionSection #transData>ul>li,
+#transData>p,
+.payment-failed-message {
   font-size: 22px;
   margin-top: 5px;
 }
@@ -958,8 +975,10 @@ select option:checked {
 }
 
 .loader-spinner {
-  border: 6px solid #f3f3f3; /* Light grey */
-  border-top: 6px solid #3498db; /* Blue */
+  border: 6px solid #f3f3f3;
+  /* Light grey */
+  border-top: 6px solid #3498db;
+  /* Blue */
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -968,12 +987,17 @@ select option:checked {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /********* model of transaction********/
-#transcactionData{
+#transcactionData {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -982,17 +1006,16 @@ select option:checked {
   font-size: 20px;
 }
 
-#transcactionData > p {
+#transcactionData>p {
   margin-top: 10px;
-  width:350px;
+  width: 350px;
 }
 
 /********* res section**************/
-#result{
+#result {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin-left: 20px;
 }
 
 #resSection {
@@ -1010,7 +1033,7 @@ select option:checked {
   margin-bottom: 30px;
 }
 
-#resSection > #subName{
+#resSection>#subName {
   /* border: 1px solid black; */
   margin-top: 20px;
   text-align: center;
@@ -1019,16 +1042,17 @@ select option:checked {
   font-size: 22px;
 }
 
-#resSection > #subName > ul{
+#resSection>#subName>ul {
   list-style-type: none;
   text-align: left;
 }
 
-#resSection > #subName > ul > li{
+#resSection>#subName>ul>li {
   border: 1px solid black;
   padding: 16px 30px;
   width: 100%;
 }
+
 /********** management page*************/
 .managementPage {
   width: 60%;
@@ -1040,7 +1064,7 @@ select option:checked {
 }
 
 /**********part of main********/
-#managementBox{
+#managementBox {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -1071,12 +1095,12 @@ select option:checked {
   font-size: 20px;
 }
 
-#txtarea{
+#txtarea {
   height: 250px;
   resize: none;
   margin-top: 15px;
   padding: 15px;
-  border:1px solid black;
+  border: 1px solid black;
   font-size: 18px;
 }
 
@@ -1085,7 +1109,8 @@ select option:checked {
   display: flex;
   flex-direction: column;
 }
-#addStaffInput{
+
+#addStaffInput {
   display: flex;
   /* width: 100%; */
   padding: 5px 15px;
@@ -1104,7 +1129,8 @@ input {
   font-size: 20px;
 }
 
-button, #linkBtn {
+button,
+#linkBtn {
   height: 50px;
   width: 270px;
   border: none;
@@ -1136,31 +1162,36 @@ button, #linkBtn {
   justify-content: center;
 }
 
-#studentRegTitle { /*** part of student reg***/
+#studentRegTitle {
+  /*** part of student reg***/
   margin-top: 80px;
   font-size: 30px;
 }
 
-#tabData{
+#tabData {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+
 /*******************global table************/
 table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
 }
 
-#tableContent{
+#tableContent {
   margin-top: 50px;
 }
 
-th { min-width: 160px;
+th {
+  min-width: 160px;
 }
 
-td, th {  padding: 10px 10px;
+td,
+th {
+  padding: 10px 10px;
 }
 
 tr:nth-child(even) {
@@ -1168,9 +1199,11 @@ tr:nth-child(even) {
 }
 
 /* rich text editor */
-.custom-ckeditor .ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable, .ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
+.custom-ckeditor .ck-rounded-corners .ck.ck-editor__main>.ck-editor__editable,
+.ck.ck-editor__main>.ck-editor__editable.ck-rounded-corners {
   height: 300px;
 }
+
 /********************model test*****************/
 .modal {
   height: 100%;
@@ -1210,7 +1243,7 @@ tr:nth-child(even) {
   margin-top: -50px;
 }
 
-.modal-content #studentData{
+.modal-content #studentData {
   display: flex;
   flex-wrap: wrap;
   width: 900px;
@@ -1225,7 +1258,7 @@ tr:nth-child(even) {
   margin-left: 25px;
 }
 
-.modal-content #studentData p{
+.modal-content #studentData p {
   font-size: 20px;
   width: 300px;
   text-align: left;
@@ -1237,30 +1270,156 @@ tr:nth-child(even) {
   margin-top: 8px;
 }
 
-.modal-content #modalBtn{
+.modal-content #modalBtn {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/*******************navbar**************/
+
+#navbar {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  top: 25px;
+  background-color: black;
+  display: flex;
+  color: white;
+  padding: 25px;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 999;
+}
+
+#navMenu {
+  display: flex;
+  margin-right: 20px;
+}
+
+#navMenu ul {
+  display: flex;
+  align-items: center;
+}
+
+#navMenu ul li {
+  display: flex;
+  margin-left: 20px;
+  list-style-type: none;
+  cursor: pointer;
+  color: white;
+}
+
+.menu-icon {
+  margin-right: 30px;
+  position: absolute;
+  display: none;
+}
+
 /***************media query***********************/
-@media screen and (max-width: 768px) {  
+@media screen and (max-width: 768px) {
+
+  /*******nav**********/
+  .menu-icon {
+    display: block;
+    right: 0;
+    z-index: 999;
+  }
+
+  #navMenu {
+    display: none;
+  }
+
+  #navMenu ul{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navMenu.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: black;
+    width: 100%;
+  }
+
+  #navMenu.show ul {
+    padding: 0;
+    margin: 0;
+    
+  }
+
+  #navMenu.show ul li {
+    margin: 10px 0;
+    display: flex;
+  }
+
   #blurry .banner-text {
     font-size: 35px;
   }
 
-  #coursePage, #aboutSection, .cusPageForm{
+  #coursePage,
+  #aboutSection,
+  .cusPageForm,
+  #registrationPage,
+  #enrollSection,
+  .managementPage {
     width: 90%;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 17px;
+    padding-right: 17px;
   }
 
-  .cusPageForm .contactUsInputForm #txtarea{
-    width:270px;
+  .boxeCont {
+    height: 140px;
+    width: 130px;
+  }
+
+  #enrollSection #notice {
+    margin-top: 20px;
+    font-size: 19px;
+  }
+
+  #registrationPage>#pageTitle {
+    text-align: center;
+  }
+
+  #registrationPage,
+  .registrationStep {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #registrationPage #stuBasicMenu,
+  #stuQualifMenu,
+  #regButtonsForForm,
+  #result,
+  #stuCourseMenu {
+    justify-content: center;
+  }
+
+  #stuDashManagementPart {
+    font-size: 19px;
+  }
+
+  .cusPageForm .contactUsInputForm #txtarea {
+    width: 270px;
   }
 
   .courseList {
     justify-content: center;
+  }
+
+  .courseList {
+    width: 100%;
+    gap: 25px;
+  }
+
+  .courses {
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   #pageTitle {
@@ -1292,4 +1451,5 @@ tr:nth-child(even) {
     font-weight: bold;
     font-size: 40px;
   }
+
 }
